@@ -4,6 +4,8 @@ import os
 from urllib.parse import urljoin
 
 API_URL = os.getenv("https://fake-news-detector-vfeq.onrender.com")
+GEMINI_API_KEY = AIzaSyCyBTnkpa2o2s8CNl8lHm-6wCNS8Jwzr4U
+
 
 
 st.set_page_config(page_title="Fake News Detector — Student", layout="wide")
