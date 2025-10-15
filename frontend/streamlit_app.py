@@ -3,9 +3,7 @@ import requests
 import os
 from urllib.parse import urljoin
 
-# API_URL = os.getenv("FND_API_URL", "http://localhost:8000/analyze")
-API_URL = "https://fake-news-backend.onrender.com/analyze"
-
+API_URL = os.getenv("FND_API_URL", "http://localhost:8000/analyze")
 
 st.set_page_config(page_title="Fake News Detector — Student", layout="wide")
 st.title("📰 Fake News Detector — Student Edition")
@@ -40,5 +38,3 @@ if submitted:
 
         st.markdown("---")
         st.caption("Tip: When in doubt, cross-check with multiple trusted outlets and look for original sources or official statements.")
-
-
