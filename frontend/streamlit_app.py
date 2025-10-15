@@ -2,9 +2,11 @@ import streamlit as st
 import requests
 import os
 from urllib.parse import urljoin
+import os
+gemini_key = os.getenv("GEMINI_API_KEY")
 
 API_URL = os.getenv("https://fake-news-detector-vfeq.onrender.com")
-GEMINI_API_KEY = AIzaSyCyBTnkpa2o2s8CNl8lHm-6wCNS8Jwzr4U
+
 
 
 
