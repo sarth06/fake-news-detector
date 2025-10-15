@@ -2,8 +2,13 @@ import streamlit as st
 import requests
 import os
 from urllib.parse import urljoin
+import os
+gemini_key = os.getenv("GEMINI_API_KEY")
 
-API_URL = os.getenv("FND_API_URL", "http://localhost:8000/analyze")
+API_URL = os.getenv("https://fake-news-detector-vfeq.onrender.com")
+
+
+
 
 st.set_page_config(page_title="Fake News Detector — Student", layout="wide")
 st.title("📰 Fake News Detector — Student Edition")
