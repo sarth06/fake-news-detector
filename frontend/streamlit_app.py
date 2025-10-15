@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 
 API_URL = os.getenv("https://fake-news-detector-vfeq.onrender.com")
 
+
 st.set_page_config(page_title="Fake News Detector — Student", layout="wide")
 st.title("📰 Fake News Detector — Student Edition")
 
