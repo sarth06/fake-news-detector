@@ -4,6 +4,10 @@ from typing import Optional
 from .extractor import extract_text_from_url
 from .gemini_client import analyze_with_gemini
 from .models import AnalysisRequest, AnalysisResult
+@app.get("/healthz")
+def health():
+    return {"status": "ok"}
+
 
 app = FastAPI(title="Fake News Detector API")
 
